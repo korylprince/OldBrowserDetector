@@ -96,7 +96,7 @@ function browserAlert(translation) {
     document.body.appendChild(e);
 }
 
-function detectOldBrowser(options,debug) {
+function detectOldBrowser(options) {
     var defaults = {
         versions: {i:7,f:4,c:15,o:10.6,s:4,n:10},
         url: 'http://browser-update.org/%s/update.html'
@@ -110,11 +110,18 @@ function detectOldBrowser(options,debug) {
         }
     }
     var browser = getBrowser();
-    if (debug || browser['v'] <= (options['versions'][browser['n']] || defaults['versions'][browser['n']] )) {
+    if (options['debug'] || browser['v'] <= (options['versions'][browser['n']] || defaults['versions'][browser['n']] )) {
         language = options['language'] || browser['l'];
         url = sprintf(options['url']||defaults['url'],browser['l']);
         translation = sprintf(getTranslation(language),browser['t'],' href="'+url+'"');
         browserAlert(translation);
     }
 
+}
+
+//setup on page load
+var $win = window.onload;
+window.onload=function(){ 
+    try {if ($win) $win();}catch (e) {}
+    detectOldBrowser(this.detectOptions);
 }

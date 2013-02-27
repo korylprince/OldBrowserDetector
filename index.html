@@ -10,20 +10,14 @@
     <body>
         <h1>Is your Browser too Old?</h1> 
     <script type="text/javascript"> 
-        var options = { //delete this variable and remove from below, or set options = {} for defaults
+        //delete this variable for defaults
+        this.detectOptions = { 
         versions: {i:7,f:4,c:15,o:10.6,s:4,n:10}, //Set versions. Letter is first letter of browser name
         language: 'en', //Force the language. Leave off to let browser select
-        url: 'http://browser-update.org/%s/update.html' //url for the link. %s resolves to language code.
+        url: 'http://browser-update.org/%s/update.html', //url for the link. %s resolves to language code.
+        debug: false //set to true to always see bar
     };  
-    var $win = window.onload; 
-    window.onload=function(){ 
-        try {if ($win) $win();}catch (e) {}
-        var e = document.createElement("script"); 
-        e.setAttribute("type", "text/javascript"); 
-        e.setAttribute("src", "detect.min.js"); // set this url to where you have the script hosted 
-        document.body.appendChild(e); 
-        detectOldBrowser(options); // remove options here if using defaults
-    }   
     </script>
+    <script src="detect.min.js" type="text/javascript"></script>
     </body>
 </html>
