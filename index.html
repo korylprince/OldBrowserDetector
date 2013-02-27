@@ -6,12 +6,24 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <script src="detect.min.js"></script>
     </head>
     <body>
         <h1>Is your Browser too Old?</h1> 
-        <script type="text/javascript">
-            detectOldBrowser();
-        </script>
+    <script type="text/javascript"> 
+        var options = { //delete this variable and remove from below, or set options = {} for defaults
+        versions: {i:7,f:4,c:15,o:10.6,s:4,n:10}, //Set versions. Letter is first letter of browser name
+        language: 'en', //Force the language. Leave off to let browser select
+        url: 'http://browser-update.org/%s/update.html' //url for the link. %s resolves to language code.
+    };  
+    var $win = window.onload; 
+    window.onload=function(){ 
+        try {if ($win) $win();}catch (e) {}
+        var e = document.createElement("script"); 
+        e.setAttribute("type", "text/javascript"); 
+        e.setAttribute("src", "detect.min.js"); // set this url to where you have the script hosted 
+        document.body.appendChild(e); 
+        detectOldBrowser(options); // remove options here if using defaults
+    }   
+    </script>
     </body>
 </html>
