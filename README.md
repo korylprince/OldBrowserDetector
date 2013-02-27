@@ -1,6 +1,3 @@
-#Currently Broken#
-
-
 OldBrowserDetector
 https://github.com/korylprince/OldBrowserDetector
 
@@ -13,9 +10,13 @@ The language is detected from the browser. There exists several translations. Un
 
 You can set the URL to whatever you like, optionally including the two-letter language code. The default is the browser-update.org site because it has all the translations. If you're using only English I suggest http://browsehappy.com/ .
 
-To add this to your site, simply paste this code into your page:
+To add this to your site, simply paste this code into the bottom of your page:
 
+    <script src="http://korylprince.github.com/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
 
+This will use all the default options. See the included index.html for each option.
+
+Note that while using the above url is fine for http sites, if you use it on an https site several browsers will give you sass. At that point you should host it yourself. All you do differently is put the file somewhere on an https server and use that url instead.
 
 Most of the magic lies in the Browser Detection code and translations by browser-update.org. I only modified it to return the language and check the Chrome version 15 seemed like a good number.
 

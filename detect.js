@@ -91,9 +91,29 @@ function getTranslation(language) {
 
 function browserAlert(translation) {
     var e = document.createElement("div"); 
-    e.setAttribute("style", "position: absolute; width:100%; top:0px; left:0px; padding:5px 36px 5px 40px; border-bottom: 1px solid #000; background-color: #e50; font-size: 12px;"); 
+    e.setAttribute("id", "detectAlert"); 
     e.innerHTML = translation;
     document.body.appendChild(e);
+    var style = "" +
+"#detectAlert {" +
+    "position: absolute;" +
+    "width: 100%;" +
+    "top: 0px;" +
+    "left: 0px;" +
+    "padding: 5px 36px 5px 40px;" +
+    "border-bottom: 1px solid #000;" +
+    "background-color: #e50;" +
+    "font-size: 12px;" +
+"}";
+    head = document.getElementsByTagName('head')[0];
+    var f = document.createElement("style");
+    f.type = 'text/css';
+    if (f.styleSheet){
+        f.styleSheet.cssText = style;
+    } else {
+        f.appendChild(document.createTextNode(style));
+    }
+    head.appendChild(f);
 }
 
 function detectOldBrowser(options) {
@@ -112,7 +132,7 @@ function detectOldBrowser(options) {
     var browser = getBrowser();
     if (options['debug'] || browser['v'] <= (options['versions'][browser['n']] || defaults['versions'][browser['n']] )) {
         language = options['language'] || browser['l'];
-        url = sprintf(options['url']||defaults['url'],browser['l']);
+        url = sprintf(options['url']||defaults['url'],language);
         translation = sprintf(getTranslation(language),browser['t'],' href="'+url+'"');
         browserAlert(translation);
     }
