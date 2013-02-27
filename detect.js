@@ -97,6 +97,7 @@ function browserAlert(translation) {
     var style = "" +
 "#detectAlert {" +
     "position: absolute;" +
+    "z-index: 999;" +
     "width: 100%;" +
     "top: 0px;" +
     "left: 0px;" +
