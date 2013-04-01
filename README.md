@@ -18,7 +18,7 @@ This will use all the default options. See the included index.html for each opti
 
 Note that while using the above url is fine for http sites, if you use it on an https site several browsers will give you sass. At that point you should host it yourself. All you do differently is put the file somewhere on an https server and use that url instead.
 
-Most of the magic lies in the Browser Detection code and translations by browser-update.org. I only modified it to return the language and check the Chrome version 15 seemed like a good number.
+Most of the magic lies in the Browser Detection code and translations by browser-update.org. I only modified it to return the language and check the Chrome version; 15 seemed like a good number.
 
 If you have any issues or questions, email the email address below, or open an issue at: https://github.com/korylprince/OldBrowserDetector/issues
 
