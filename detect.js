@@ -92,7 +92,7 @@ function getTranslation(language) {
 function browserAlert(translation) {
     var e = document.createElement("div"); 
     e.setAttribute("id", "detectAlert"); 
-    e.innerHTML = translation;
+    e.innerHTML = '<div>'+translation+'</div>';
     document.body.appendChild(e);
     var style = "" +
 "#detectAlert {" +
@@ -101,10 +101,21 @@ function browserAlert(translation) {
     "width: 100%;" +
     "top: 0px;" +
     "left: 0px;" +
-    "padding: 5px 36px 5px 40px;" +
-    "border-bottom: 1px solid #000;" +
-    "background-color: #e50;" +
-    "font-size: 12px;" +
+    "border-bottom: 3px solid #02a;" +
+    "background-color: #04c;" +
+    "color: #fff;" +
+    "font-size: 18px;" +
+"}" +
+"#detectAlert div {" +
+    "margin: 5px;" +
+"}"+
+"#detectAlert b {" +
+    "color: #fca;" +
+"}"+
+"#detectAlert a {" +
+    "color: #fca;" +
+    "font-weight: bold;" +
+    "font-size: 20px;" +
 "}";
     head = document.getElementsByTagName('head')[0];
     var f = document.createElement("style");
