@@ -45,47 +45,47 @@ function getBrowser() {
 }
 
 function getTranslation(language) {
-    var translation = 'Your browser (%s) is <b>out of date</b>. It has known <b>security flaws</b> and may <b>not display all features</b> of this and other websites. <a%s>Learn how to update your browser</a>';
+    var translation = 'Your browser (%s) is <strong>out of date</strong>. It has known <strong>security flaws</strong> and may <strong>not display all features</strong> of this and other websites. <a%s>Learn how to update your browser</a>';
     if (language=="de")
-        translation = 'Sie verwenden einen <b>veralteten Browser</b> (%s) mit <b>Sicherheitsschwachstellen</b> und <b>k&ouml;nnen nicht alle Funktionen dieser Webseite nutzen</b>. <a%s>Hier erfahren Sie, wie einfach Sie Ihren Browser aktualisieren k&ouml;nnen</a>.';
+        translation = 'Sie verwenden einen <strong>veralteten Browser</strong> (%s) mit <strong>Sicherheitsschwachstellen</strong> und <strong>k&ouml;nnen nicht alle Funktionen dieser Webseite nutzen</strong>. <a%s>Hier erfahren Sie, wie einfach Sie Ihren Browser aktualisieren k&ouml;nnen</a>.';
     else if (language=="it")
-        translation = 'Il tuo browser (%s) <b>non è aggiornato</b>. Ha delle <b>falle di sicurezza</b> e potrebbe <b>non visualizzare correttamente</b> le pagine di questo e altri siti. <a%s>Aggiorna il tuo browser</a>!';
+        translation = 'Il tuo browser (%s) <strong>non è aggiornato</strong>. Ha delle <strong>falle di sicurezza</strong> e potrebbe <strong>non visualizzare correttamente</strong> le pagine di questo e altri siti. <a%s>Aggiorna il tuo browser</a>!';
     else if (language=="pl")
-        translation = 'Przeglądarka (%s), której używasz, jest przestarzała. Posiada ona udokumentowane <b>luki bezpieczeństwa, inne wady</b> oraz <b>ograniczoną funkcjonalność</b>. Tracisz możliwość skorzystania z pełni możliwości oferowanych przez niektóre strony internetowe. <a%s>Dowiedz się jak zaktualizować swoją przeglądarkę</a>.';
+        translation = 'Przeglądarka (%s), której używasz, jest przestarzała. Posiada ona udokumentowane <strong>luki bezpieczeństwa, inne wady</strong> oraz <strong>ograniczoną funkcjonalność</strong>. Tracisz możliwość skorzystania z pełni możliwości oferowanych przez niektóre strony internetowe. <a%s>Dowiedz się jak zaktualizować swoją przeglądarkę</a>.';
     else if (language=="es")
-        translation = 'Tu navegador (%s) está <b>desactualizado</b>. Tiene conocidas <b>fallas de seguridad</b> y podría <b>no mostrar todas las características</b> de este y otros sitios web. <a%s>Aprénde cómo puedes actualizar tu navegador</a>';
+        translation = 'Tu navegador (%s) está <strong>desactualizado</strong>. Tiene conocidas <strong>fallas de seguridad</strong> y podría <strong>no mostrar todas las características</strong> de este y otros sitios web. <a%s>Aprénde cómo puedes actualizar tu navegador</a>';
     else if (language=="nl")
-        translation = 'Uw browser (%s) is <b>oud</b>. Het heeft bekende <b>veiligheidsissues</b> en kan <b>niet alle mogelijkheden</b> weergeven van deze of andere websites. <a%s>Lees meer over hoe uw browser te upgraden</a>';
+        translation = 'Uw browser (%s) is <strong>oud</strong>. Het heeft bekende <strong>veiligheidsissues</strong> en kan <strong>niet alle mogelijkheden</strong> weergeven van deze of andere websites. <a%s>Lees meer over hoe uw browser te upgraden</a>';
     else if (language=="pt")
-        translation = 'Seu navegador (%s) está <b>desatualizado</b>. Ele possui <b>falhas de segurança</b> e pode <b>apresentar problemas</b> para exibir este e outros websites. <a%s>Veja como atualizar o seu navegador</a>';
+        translation = 'Seu navegador (%s) está <strong>desatualizado</strong>. Ele possui <strong>falhas de segurança</strong> e pode <strong>apresentar problemas</strong> para exibir este e outros websites. <a%s>Veja como atualizar o seu navegador</a>';
     else if (language=="sl")
-        translation = 'Vaš brskalnik (%s) je <b>zastarel</b>. Ima več <b>varnostnih pomankljivosti</b> in morda <b>ne bo pravilno prikazal</b> te ali drugih strani. <a%s>Poglejte kako lahko posodobite svoj brskalnik</a>';
+        translation = 'Vaš brskalnik (%s) je <strong>zastarel</strong>. Ima več <strong>varnostnih pomankljivosti</strong> in morda <strong>ne bo pravilno prikazal</strong> te ali drugih strani. <a%s>Poglejte kako lahko posodobite svoj brskalnik</a>';
     else if (language=="ru")
-        translation = 'Ваш браузер (%s) <b>устарел</b>. Он имеет <b>уязвимости в безопасности</b> и может <b>не показывать все возможности</b> на этом и других сайтах. <a%s>Узнайте, как обновить Ваш браузер</a>';
+        translation = 'Ваш браузер (%s) <strong>устарел</strong>. Он имеет <strong>уязвимости в безопасности</strong> и может <strong>не показывать все возможности</strong> на этом и других сайтах. <a%s>Узнайте, как обновить Ваш браузер</a>';
     else if (language=="id")
-        translation = 'Browser Anda (% s) sudah <b>kedaluarsa</b>. Browser yang Anda pakai memiliki <b>kelemahan keamanan</b> dan mungkin <b>tidak dapat menampilkan semua fitur</b> dari situs Web ini dan lainnya. <a%s> Pelajari cara memperbarui browser Anda</a>';
+        translation = 'Browser Anda (% s) sudah <strong>kedaluarsa</strong>. Browser yang Anda pakai memiliki <strong>kelemahan keamanan</strong> dan mungkin <strong>tidak dapat menampilkan semua fitur</strong> dari situs Web ini dan lainnya. <a%s> Pelajari cara memperbarui browser Anda</a>';
     else if (language=="uk")
-        translation = 'Ваш браузер (%s) <b>застарів</b>. Він <b>уразливий</b> й може <b>не відображати всі можливості</b> на цьому й інших сайтах. <a%s>Дізнайтесь, як оновити Ваш браузер</a>';
+        translation = 'Ваш браузер (%s) <strong>застарів</strong>. Він <strong>уразливий</strong> й може <strong>не відображати всі можливості</strong> на цьому й інших сайтах. <a%s>Дізнайтесь, як оновити Ваш браузер</a>';
     else if (language=="ko")
-        translation = '지금 사용하고 계신 브라우저(%s)는 <b>오래되었습니다.</b> 알려진 <b>보안 취약점</b>이 존재하며, 새로운 웹 사이트가 <b>깨져 보일 수도</b> 있습니다. <a%s>브라우저를 어떻게 업데이트하나요?</a>';
+        translation = '지금 사용하고 계신 브라우저(%s)는 <strong>오래되었습니다.</strong> 알려진 <strong>보안 취약점</strong>이 존재하며, 새로운 웹 사이트가 <strong>깨져 보일 수도</strong> 있습니다. <a%s>브라우저를 어떻게 업데이트하나요?</a>';
     else if (language=="rm")
-        translation = 'Tes navigatur (%s) è <b>antiquà</b>. El cuntegna <b>problems da segirezza</b> enconuschents e mussa eventualmain <b>betg tut las funcziuns</b> da questa ed autras websites. <a%s>Emprenda sco actualisar tes navigatur</a>.';
+        translation = 'Tes navigatur (%s) è <strong>antiquà</strong>. El cuntegna <strong>problems da segirezza</strong> enconuschents e mussa eventualmain <strong>betg tut las funcziuns</strong> da questa ed autras websites. <a%s>Emprenda sco actualisar tes navigatur</a>.';
     else if (language=="ja")  
-        translation = 'お使いのブラウザ「%s」は、<b>時代遅れ</b>のバージョンです。既知の<b>脆弱性</b>が存在するばかりか、<b>機能不足</b>によって、サイトが正常に表示できない可能性があります。<a%s>ブラウザを更新する方法を確認する</a>';
+        translation = 'お使いのブラウザ「%s」は、<strong>時代遅れ</strong>のバージョンです。既知の<strong>脆弱性</strong>が存在するばかりか、<strong>機能不足</strong>によって、サイトが正常に表示できない可能性があります。<a%s>ブラウザを更新する方法を確認する</a>';
     else if (language=="fr")
-        translation = 'Votre navigateur (%s) est <b>périmé</b>. Il contient des <b>failles de sécurité</b> et pourrait <b>ne pas afficher certaines fonctionalités</b> des sites internet récents. <a%s>Découvrez comment mettre votre navigateur à jour</a>';
+        translation = 'Votre navigateur (%s) est <strong>périmé</strong>. Il contient des <strong>failles de sécurité</strong> et pourrait <strong>ne pas afficher certaines fonctionalités</strong> des sites internet récents. <a%s>Découvrez comment mettre votre navigateur à jour</a>';
     else if (language=="da")
-            translation = 'Din browser (%s) er <b>forældet</b>. Den har kendte <b>sikkerhedshuller</b> og kan måske <b>ikke vise alle funktioner</b> på dette og andre websteder. <a%s>Se hvordan du opdaterer din browser</a>';
+            translation = 'Din browser (%s) er <strong>forældet</strong>. Den har kendte <strong>sikkerhedshuller</strong> og kan måske <strong>ikke vise alle funktioner</strong> på dette og andre websteder. <a%s>Se hvordan du opdaterer din browser</a>';
     else if (language=="al")
-            translation = 'Shfletuesi juaj (%s) është <b>ca i vjetër</b>. Ai ka <b>të meta sigurie</b> të njohura dhe mundet të <b>mos i shfaqë të gjitha karakteristikat</b> e kësaj dhe shumë faqeve web të tjera. <a%s>Mësoni se si të përditësoni shfletuesin tuaj</a>';
+            translation = 'Shfletuesi juaj (%s) është <strong>ca i vjetër</strong>. Ai ka <strong>të meta sigurie</strong> të njohura dhe mundet të <strong>mos i shfaqë të gjitha karakteristikat</strong> e kësaj dhe shumë faqeve web të tjera. <a%s>Mësoni se si të përditësoni shfletuesin tuaj</a>';
     else if (language=="ca")
-            translation = 'El teu navegador (%s) està <b>desactualitzat</b>. Té <b>vulnerabilitats</b> conegudes i pot <b>no mostrar totes les característiques</b> d\'aquest i altres llocs web. <a%s>Aprèn a actualitzar el navegador</a>';
+            translation = 'El teu navegador (%s) està <strong>desactualitzat</strong>. Té <strong>vulnerabilitats</strong> conegudes i pot <strong>no mostrar totes les característiques</strong> d\'aquest i altres llocs web. <a%s>Aprèn a actualitzar el navegador</a>';
     else if (language=="tr")
-        translation = 'Tarayıcınız (%s) <b>güncel değildir.</b>. Eski versiyon olduğu için <b>güvenlik açıkları</b> vardır ve görmek istediğiniz bu web sitesinin ve diğer web sitelerinin <b>tüm özelliklerini hatasız bir şekilde</b> gösteremeyecektir. <a%s>Tarayıcınızı nasıl güncelleyeceğinizi öğrenin!</a>';
+        translation = 'Tarayıcınız (%s) <strong>güncel değildir.</strong>. Eski versiyon olduğu için <strong>güvenlik açıkları</strong> vardır ve görmek istediğiniz bu web sitesinin ve diğer web sitelerinin <strong>tüm özelliklerini hatasız bir şekilde</strong> gösteremeyecektir. <a%s>Tarayıcınızı nasıl güncelleyeceğinizi öğrenin!</a>';
     else if (language=="fa")
-        translation = 'مرورگر شما (%s) <b>از رده خارج شده</b> می باشد. این مرورگر دارای <b>مشکلات امنیتی شناخته شده</b> می باشد و <b>نمی تواند تمامی ویژگی های این</b> وب سایت و دیگر وب سایت ها را به خوبی نمایش دهد. <a%s>در خصوص گرفتن راهنمایی درخصوص نحوه ی به روز رسانی مرورگر خود اینجا کلیک کنید.</a>';
+        translation = 'مرورگر شما (%s) <strong>از رده خارج شده</strong> می باشد. این مرورگر دارای <strong>مشکلات امنیتی شناخته شده</strong> می باشد و <strong>نمی تواند تمامی ویژگی های این</strong> وب سایت و دیگر وب سایت ها را به خوبی نمایش دهد. <a%s>در خصوص گرفتن راهنمایی درخصوص نحوه ی به روز رسانی مرورگر خود اینجا کلیک کنید.</a>';
     else if (language=="sv")
-        translation = 'Din webbläsare (%s) är <b>föråldrad</b>. Den har kända <b>säkerhetshål</b> och <b>kan inte visa alla funktioner korrekt</b> på denna och på andra webbsidor. <a%s>Uppdatera din webbläsare idag</a>';
+        translation = 'Din webbläsare (%s) är <strong>föråldrad</strong>. Den har kända <strong>säkerhetshål</strong> och <strong>kan inte visa alla funktioner korrekt</strong> på denna och på andra webbsidor. <a%s>Uppdatera din webbläsare idag</a>';
     return translation;
 }
 
@@ -109,8 +109,9 @@ function browserAlert(translation) {
 "#detectAlert div {" +
     "margin: 5px;" +
 "}"+
-"#detectAlert b {" +
+"#detectAlert strong {" +
     "color: #fca;" +
+    "font-weight: bold;" +
 "}"+
 "#detectAlert a {" +
     "color: #fca;" +
