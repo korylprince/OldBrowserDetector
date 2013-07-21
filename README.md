@@ -12,13 +12,15 @@ You can set the URL to whatever you like, optionally including the two-letter la
 
 To add this to your site, simply paste this code into the bottom of your page:
 
-    <script src="http://korylprince.github.com/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
+    <script src="http://korylprince.github.io/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
 
 This will use all the default options. See the included index.html for each option.
 
 Note that while using the above url is fine for http sites, if you use it on an https site several browsers will give you sass. At that point you should host it yourself. All you do differently is put the file somewhere on an https server and use that url instead.
 
 Most of the magic lies in the Browser Detection code and translations by browser-update.org. I only modified it to return the language and check the Chrome version; 15 seemed like a good number.
+
+The style is also updated. See issue #1.
 
 If you have any issues or questions, email the email address below, or open an issue at: https://github.com/korylprince/OldBrowserDetector/issues
 
@@ -42,7 +44,7 @@ Find your language code by opening a javascript console and running:
 
 Now translate the following message:
 
-    Your browser (%s) is <b>out of date</b>. It has known <b>security flaws</b> and may <b>not display all features</b> of this and other websites. <a%s>Learn how to update your browser</a>
+    Your browser (%s) is <strong>out of date</strong>. It has known <strong>security flaws</strong> and may <strong>not display all features</strong> of this and other websites. <a%s>Learn how to update your browser</a>
 
 Leaving html tags and %s in place. You can create a pull request, or simply open an issue with the translation and I will add it.
 
