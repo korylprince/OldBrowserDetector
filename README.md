@@ -10,9 +10,9 @@ The language is detected from the browser. There exists several translations. Un
 
 You can set the URL to whatever you like, optionally including the two-letter language code. The default is the browser-update.org site because it has all the translations. If you're using only English I suggest http://browsehappy.com/ .
 
-To add this to your site, simply paste this code into the bottom of your page:
+To add this to your site, simply paste this code into the bottom of your page (See CDN section below for more info):
 
-    <script src="http://korylprince.github.io/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
+    <script src="http://korylprince.github.com/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
 
 This will use all the default options. See the included index.html for each option.
 
@@ -20,11 +20,25 @@ Note that while using the above url is fine for http sites, if you use it on an 
 
 Most of the magic lies in the Browser Detection code and translations by browser-update.org. I only modified it to return the language and check the Chrome version; 15 seemed like a good number.
 
-The style is also updated. See issue #1.
+Since version 1.0.0, the style is also updated.
 
 If you have any issues or questions, email the email address below, or open an issue at: https://github.com/korylprince/OldBrowserDetector/issues
 
-#Debugging#
+#CDN#
+
+You can use the gh-pages branch of this repo as a CDN. To link to the current stable version use:
+
+    http://korylprince.github.com/OldBrowserDetector/detect.min.js
+
+Note, however, that while I will try not to ever break anything, I can't make any promises. If you find a version that works for you, you can link to it like:
+
+    http://korylprince.github.com/OldBrowserDetector/detect-1.0.0.min.js
+
+For more information about using Github as a CDN see [here](http://code.lancepollard.com/github-as-a-cdn/).
+
+#Debugging and Developing#
+
+The included index.html now automatically checks for a local detect.js first before pointing to the latest stable in the CDN. This allows you to test local changes easier.
 
 To force the message to show run the following in a javascript console:
 
@@ -44,7 +58,7 @@ Find your language code by opening a javascript console and running:
 
 Now translate the following message:
 
-    Your browser (%s) is <strong>out of date</strong>. It has known <strong>security flaws</strong> and may <strong>not display all features</strong> of this and other websites. <a%s>Learn how to update your browser</a>
+    Your browser (%s) is <b>out of date</b>. It has known <b>security flaws</b> and may <b>not display all features</b> of this and other websites. <a%s>Learn how to update your browser</a>
 
 Leaving html tags and %s in place. You can create a pull request, or simply open an issue with the translation and I will add it.
 
