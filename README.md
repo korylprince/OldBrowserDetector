@@ -12,7 +12,7 @@ You can set the URL to whatever you like, optionally including the two-letter la
 
 To add this to your site, simply paste this code into the bottom of your page (See CDN section below for more info):
 
-    <script src="http://korylprince.github.com/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
+    <script src="//korylprince.github.com/OldBrowserDetector/detect.min.js" type="text/javascript"></script>
 
 This will use all the default options. See the included index.html for each option.
 
@@ -28,13 +28,15 @@ If you have any issues or questions, email the email address below, or open an i
 
 You can use the gh-pages branch of this repo as a CDN. To link to the current stable version use:
 
-    http://korylprince.github.com/OldBrowserDetector/detect.min.js
+    //korylprince.github.io/OldBrowserDetector/detect.min.js
 
 Note, however, that while I will try not to ever break anything, I can't make any promises. If you find a version that works for you, you can link to it like:
 
-    http://korylprince.github.com/OldBrowserDetector/detect-1.0.0.min.js
+    //korylprince.github.io/OldBrowserDetector/detect-1.0.0.min.js
 
 For more information about using Github as a CDN see [here](http://code.lancepollard.com/github-as-a-cdn/).
+
+If you're wondering why there are no longer `http:`'s in front, Github now has HTTPS support on Github Pages which means we can use the CDN over SSL now. The `//` scheme will make the browser choose `http:` or `https:` depending on how the calling page is loaded.
 
 #Debugging and Developing#
 
