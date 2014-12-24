@@ -87,7 +87,7 @@ function getTranslation(language) {
     else if (language=="sv")
         translation = 'Din webbläsare (%s) är <strong>föråldrad</strong>. Den har kända <strong>säkerhetshål</strong> och <strong>kan inte visa alla funktioner korrekt</strong> på denna och på andra webbsidor. <a%s>Uppdatera din webbläsare idag</a>';
     else if (language=="zh")
-        translation = '您的浏览器 (%s)  <strong>版本太低</strong>。您需要升级新版本的浏览器才可以使用本网站的全部功能。 <a%s>点击升级新的浏览器</a>';
+        translation = '您的浏览器 (%s)  <strong>版本太低</strong>。您需要升级新版本的浏览器才可以使用本网站的全部功能。 <a%s>升级新的浏览器</a>';
     return translation;
 }
 
@@ -150,6 +150,8 @@ function detectOldBrowser(options) {
         url = sprintf(options['url']||defaults['url'],language);
         translation = sprintf(getTranslation(language),browser['t'],' href="'+url+'"');
         browserAlert(translation);
+        if(options['openUrl'])
+            window.open(url);
     }
 
 }
