@@ -32,7 +32,7 @@ You can use the gh-pages branch of this repo as a CDN. To link to the current st
 
 Note, however, that while I will try not to ever break anything, I can't make any promises. If you find a version that works for you, you can link to it like:
 
-    //korylprince.github.io/OldBrowserDetector/detect-1.0.0.min.js
+    //korylprince.github.io/OldBrowserDetector/detect-1.0.1.min.js
 
 For more information about using Github as a CDN see [here](http://code.lancepollard.com/github-as-a-cdn/).
 
